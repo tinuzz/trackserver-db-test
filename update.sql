@@ -6,4 +6,4 @@ ALTER TABLE `wp_ts_tracks` CHANGE `name` `name` VARCHAR(255) CHARACTER SET utf8m
 ALTER TABLE `wp_ts_tracks` CHANGE `source` `source` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
 ALTER TABLE `wp_ts_tracks` CHANGE `comment` `comment` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
 
-CREATE INDEX trip_id_occurred ON wp_ts_locations (trip_id,occurred);
+ALTER TABLE `wp_ts_locations` ADD INDEX `trip_id_occurred` (`trip_id`, `occurred`);

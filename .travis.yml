@@ -1,0 +1,17 @@
+language: php
+
+branches:
+  only:
+  - master
+
+matrix:
+  include:
+  - dist: precise
+    services:
+    - mysql
+  - dist: trusty
+    addons:
+      mariadb: '10.0'
+
+before_script:
+  - mysqladmin -h 127.0.0.1 -u root create trackserver

@@ -10,7 +10,15 @@ matrix:
     dist: precise
     services:
     - mysql
-  - name: "Trusty"
+  - name: "MySQL 5.6 on Trusty"
+    dist: trusty
+    services:
+    - mysql
+  - name: "MySQL 5.7 on Xenial"
+    dist: xenial
+    services:
+    - mysql
+  - name: "MariaDB 10.0 on Trusty"
     dist: trusty
     addons:
       mariadb: '10.0'

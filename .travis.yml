@@ -23,8 +23,8 @@ matrix:
     dist: trusty
     addons:
       mariadb: '10.0'
-  - name: "MariaDB 10.4 on Xenial"
-    dist: xenial
+  - name: "MariaDB 10.4 on Trusty"
+    dist: trusty
     addons:
       mariadb: '10.4'
 

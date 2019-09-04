@@ -1,4 +1,5 @@
 #!/bin/sh
+SET_SQL_MODE=$1
 mysql="mysql -h 127.0.0.1 -u root"
 
 if [ "$SET_SQL_MODE" = "y" ]; then

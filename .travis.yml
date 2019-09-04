@@ -18,7 +18,7 @@ matrix:
     dist: xenial
     services:
     - mysql
-    env: SET_SQL_MODE=y
+    env: SET_SQL_MODE=n
   - name: "MariaDB 10.0 on Trusty"
     dist: trusty
     addons:

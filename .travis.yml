@@ -6,10 +6,12 @@ branches:
 
 matrix:
   include:
-  - dist: precise
+  - name: "MySQL 5.5 on Precise"
+    dist: precise
     services:
     - mysql
-  - dist: trusty
+  - name: "Trusty"
+    dist: trusty
     addons:
       mariadb: '10.0'
 

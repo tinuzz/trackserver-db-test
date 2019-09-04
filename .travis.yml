@@ -30,5 +30,6 @@ matrix:
 
 before_script:
   - mysqladmin -h 127.0.0.1 -u root create trackserver
+  - export SET_SQL_MODE
 
 script: ./test.sh

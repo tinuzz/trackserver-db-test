@@ -23,6 +23,10 @@ matrix:
     dist: trusty
     addons:
       mariadb: '10.0'
+  - name: "MariaDB 10.4 on Xenial"
+    dist: xenial
+    addons:
+      mariadb: '10.4'
 
 before_script:
   - mysqladmin -h 127.0.0.1 -u root create trackserver
